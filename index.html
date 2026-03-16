@@ -12,20 +12,23 @@
     </header>
     <main class="my-main">
       <section class="card">
+        <!--Button: Bookmark-->
+        <button class="card__bookmark"></button>
         <!--Question-->
         <p class="card__question">
           What is the name of the school that Harry Potter attends?
         </p>
         <!--Answer (hidden option)-->
         <!-- <div class="card__answer-group"> -->
-        <p class="card__answer">Hogwarts School of Witchcraft and Wizardry</p>
+        <p class="card__answer" aria-describedby="Answer">
+          Hogwarts School of Witchcraft and Wizardry
+        </p>
         <!--Button: Show Answer / Hide Answer-->
         <button class="card__show-answer" type="button">Show Answer</button>
         <!-- </div> -->
-        <!--Button: Bookmark-->
-        <button class="card__bookmark"></button>
+
         <!--categories as tags-->
-        <div class="card__tags">
+        <div class="card__tags" aria-describedby="Tags regarding the question">
           <p class="card__tag tag--1">Harry Potter</p>
           <p class="card__tag tag--2">Hogwarts</p>
           <p class="card__tag tag--3">Fiction</p>
@@ -109,17 +112,17 @@
         <a class="navbar__icon" href="#bookmark">bookmark</a>
         <a class="navbar__icon" href="#profile">profile</a> -->
         <ul class="navbar__list">
-          <li class="navbar__item navbar__item--home">
-            <a href="#home" class="navbar__icon">
+          <li class="navbar__item navbar__item--active">
+            <a href="index.html" class="navbar__icon">
               <img src="./pics/home.png" alt="Home Icon" width="40vd" />
             </a>
           </li>
-          <li class="navbar__item navbar__item--bookmark">
-            <a href="#bookmark" class="navbar__icon">
+          <li class="navbar__item">
+            <a href="bookmark.html" class="navbar__icon">
               <img src="./pics/bookmark.png" alt="Home Icon" width="40vd" />
             </a>
           </li>
-          <li class="navbar__item navbar__item--profile">
+          <li class="navbar__item">
             <a href="#profile" class="navbar__icon">
               <img src="./pics/witch.png" alt="Home Icon" width="40vd" />
             </a>
