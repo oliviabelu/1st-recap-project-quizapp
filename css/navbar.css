@@ -1,5 +1,5 @@
-.navbar {
-  /*list-style: none; */
+.navbar__list {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   background: var(--golden);
@@ -7,13 +7,13 @@
   position: fixed;
   bottom: 0px;
   width: 100%;
+  margin: 0;
 }
 
 .navbar__item {
 }
 
 .navbar__icon {
-  color: var(--black);
   text-decoration: none;
-  background-image: url(https://www.flaticon.com/free-icons/housing);
+  width: 100px;
 }

@@ -17,9 +17,11 @@
           What is the name of the school that Harry Potter attends?
         </p>
         <!--Answer (hidden option)-->
+        <!-- <div class="card__answer-group"> -->
         <p class="card__answer">Hogwarts School of Witchcraft and Wizardry</p>
         <!--Button: Show Answer / Hide Answer-->
-        <button class="card__show-answer"></button>
+        <button class="card__show-answer" type="button">Show Answer</button>
+        <!-- </div> -->
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
@@ -36,7 +38,7 @@
         <!--Answer (hidden option)-->
         <p class="card__answer">Ron Weasley</p>
         <!--Button: Show Answer / Hide Answer-->
-        <button class="card__show-answer"></button>
+        <button class="card__show-answer" type="button">Show Answer</button>
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
@@ -54,7 +56,7 @@
         <!--Answer (hidden option)-->
         <p class="card__answer">The Dark Mark</p>
         <!--Button: Show Answer / Hide Answer-->
-        <button class="card__show-answer"></button>
+        <button class="card__show-answer" type="button">Show Answer</button>
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
@@ -72,7 +74,7 @@
         <!--Answer (hidden option)-->
         <p class="card__answer">The Fat Lady (portrait)</p>
         <!--Button: Show Answer / Hide Answer-->
-        <button class="card__show-answer"></button>
+        <button class="card__show-answer" type="button">Show Answer</button>
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
@@ -90,7 +92,7 @@
         <!--Answer (hidden option)-->
         <p class="card__answer">Quidditch</p>
         <!--Button: Show Answer / Hide Answer-->
-        <button class="card__show-answer"></button>
+        <button class="card__show-answer" type="button">Show Answer</button>
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
@@ -103,20 +105,26 @@
     </main>
     <footer>
       <nav class="navbar">
-        <a class="navbar__icon" href="#home">home</a>
+        <!-- <a class="navbar__icon" href="#home"><img src="./pics/home.png" /></a>
         <a class="navbar__icon" href="#bookmark">bookmark</a>
-        <a class="navbar__icon" href="#profile">profile</a>
-        <!-- <ul class="navbar__list">
-        <li class="navbar__item navbar__item--home">
-          <a href="#home" class="navbar__icon">home</a>
-        </li>
-        <li class="navbar__item navbar__item--bookmark">
-          <a href="#bookmark" class="navbar__icon">bookmark</a>
-        </li>
-        <li class="navbar__item navbar__item--profile">
-          <a href="#profile" class="navbar__icon">profile</a>
-        </li>
-      </ul> -->
+        <a class="navbar__icon" href="#profile">profile</a> -->
+        <ul class="navbar__list">
+          <li class="navbar__item navbar__item--home">
+            <a href="#home" class="navbar__icon">
+              <img src="./pics/home.png" alt="Home Icon" width="40vd" />
+            </a>
+          </li>
+          <li class="navbar__item navbar__item--bookmark">
+            <a href="#bookmark" class="navbar__icon">
+              <img src="./pics/bookmark.png" alt="Home Icon" width="40vd" />
+            </a>
+          </li>
+          <li class="navbar__item navbar__item--profile">
+            <a href="#profile" class="navbar__icon">
+              <img src="./pics/witch.png" alt="Home Icon" width="40vd" />
+            </a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>
