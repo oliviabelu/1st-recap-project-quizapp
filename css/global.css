@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /*---colors---*/
+  --golden: #f8da55;
+  --black: #000000;
+
+  /*---sizes---*/
+  --padding-nav: 1em;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}

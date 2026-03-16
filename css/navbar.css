@@ -1,0 +1,17 @@
+.navbar {
+  /*list-style: none; */
+  display: flex;
+  justify-content: space-between;
+  background: var(--golden);
+  padding: var(--padding-nav);
+  position: fixed;
+}
+
+.navbar__item {
+}
+
+.navbar__icon {
+  color: var(--black);
+  text-decoration: none;
+  background-image: url(https://www.flaticon.com/free-icons/housing);
+}
