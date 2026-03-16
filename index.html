@@ -7,25 +7,9 @@
     <title>My Quiz</title>
   </head>
   <body>
-    <header>
-      <h1>My Quiz</h1>
+    <header class="my-header">
+      <h1 class="my-header__title">Harry Potter Quiz</h1>
     </header>
-    <nav class="navbar">
-      <a class="navbar__icon" href="#home">home</a>
-      <a class="navbar__icon" href="#bookmark">bookmark</a>
-      <a class="navbar__icon" href="#profile">profile</a>
-      <!-- <ul class="navbar__list">
-        <li class="navbar__item navbar__item--home">
-          <a href="#home" class="navbar__icon">home</a>
-        </li>
-        <li class="navbar__item navbar__item--bookmark">
-          <a href="#bookmark" class="navbar__icon">bookmark</a>
-        </li>
-        <li class="navbar__item navbar__item--profile">
-          <a href="#profile" class="navbar__icon">profile</a>
-        </li>
-      </ul> -->
-    </nav>
     <main class="my-main">
       <section class="card">
         <!--Question-->
@@ -39,9 +23,11 @@
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
-        <p class="tag-1">Harry Potter</p>
-        <p class="tag-2">Hogwarts</p>
-        <p class="tag-3">Fiction</p>
+        <div class="card__tags">
+          <p class="card__tag tag--1">Harry Potter</p>
+          <p class="card__tag tag--2">Hogwarts</p>
+          <p class="card__tag tag--3">Fiction</p>
+        </div>
       </section>
       <section class="card">
         <p class="card__question">
@@ -54,9 +40,11 @@
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
-        <p class="tag-1">Harry Potter</p>
-        <p class="tag-2">Characters</p>
-        <p class="tag-3">Friends</p>
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Characters</p>
+          <p class="card__tag tag-3">Friends</p>
+        </div>
       </section>
       <section class="card">
         <p class="card__question">
@@ -70,9 +58,11 @@
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
-        <p class="tag-1">Harry Potter</p>
-        <p class="tag-2">Symbolism</p>
-        <p class="tag-3">Scar</p>
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Symbolism</p>
+          <p class="card__tag tag-3">Scar</p>
+        </div>
       </section>
       <section class="card">
         <p class="card__question">
@@ -86,9 +76,11 @@
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
-        <p class="tag-1">Harry Potter</p>
-        <p class="tag-2">Creatures</p>
-        <p class="tag-3">Gryffindor</p>
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Creatures</p>
+          <p class="card__tag tag-3">Gryffindor</p>
+        </div>
       </section>
       <section class="card">
         <p class="card__question">
@@ -102,10 +94,30 @@
         <!--Button: Bookmark-->
         <button class="card__bookmark"></button>
         <!--categories as tags-->
-        <p class="tag-1">Harry Potter</p>
-        <p class="tag-2">Sports</p>
-        <p class="tag-3">Magic</p>
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Sports</p>
+          <p class="card__tag tag-3">Magic</p>
+        </div>
       </section>
     </main>
+    <footer>
+      <nav class="navbar">
+        <a class="navbar__icon" href="#home">home</a>
+        <a class="navbar__icon" href="#bookmark">bookmark</a>
+        <a class="navbar__icon" href="#profile">profile</a>
+        <!-- <ul class="navbar__list">
+        <li class="navbar__item navbar__item--home">
+          <a href="#home" class="navbar__icon">home</a>
+        </li>
+        <li class="navbar__item navbar__item--bookmark">
+          <a href="#bookmark" class="navbar__icon">bookmark</a>
+        </li>
+        <li class="navbar__item navbar__item--profile">
+          <a href="#profile" class="navbar__icon">profile</a>
+        </li>
+      </ul> -->
+      </nav>
+    </footer>
   </body>
 </html>

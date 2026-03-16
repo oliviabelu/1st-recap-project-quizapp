@@ -1,0 +1,14 @@
+.my-header {
+  /* box-shadow: 0px 0px 10px 0px var(#ffffff); */
+}
+
+.my-header__title {
+  margin: 0;
+  background: var(--golden);
+  padding: var(--padding-head);
+  color: var(--background);
+  text-align: center;
+  text-decoration: dotted;
+  text-shadow: var(--shaddow) 1px 0 10px;
+  /* text-shadow: 4px 4px var(--shaddow); */
+}
