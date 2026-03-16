@@ -1,3 +1,13 @@
+.my-main {
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: var(--padding-main);
+}
+
 .card {
-  background: var(--golden);
+  background: var(--card);
+  padding: var(--padding-card);
+  border-radius: var(--radius-1);
 }

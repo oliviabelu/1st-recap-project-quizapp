@@ -7,10 +7,16 @@
 :root {
   /*---colors---*/
   --golden: #f8da55;
+  --card: #f5bc22;
   --black: #000000;
+  --background: #801616;
 
   /*---sizes---*/
   --padding-nav: 1em;
+  --padding-main: 5%;
+  --padding-card: 1em;
+  --gap: 2em;
+  --radius-1: 3%;
 }
 
 body {

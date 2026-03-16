@@ -5,6 +5,8 @@
   background: var(--golden);
   padding: var(--padding-nav);
   position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 .navbar__item {
