@@ -20,14 +20,14 @@
   border: var(--border) solid var(--golden);
 }
 
-.card__question,
-.card_answer {
+.card__question {
   margin: 0;
   text-align: center;
   background: var(--golden);
   padding: var(--padding-card);
   border-radius: var(--radius-in-card);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
+  border: var(--border) solid var(--background);
 }
 
 /* .card__answer-group {
@@ -65,15 +65,24 @@
   } */
 }
 .card__bookmark {
-  background-image: url("../pics/bookmark.png");
+  /* background-image: url("../pics/bookmark.png");*/
   width: 50px;
   height: 50px;
-  background-size: cover;
+  /*background-size: cover;*/
   position: absolute;
   top: -10px;
   right: 10px;
   background-color: transparent;
   border: none;
+}
+
+.card__bookmark:hover {
+  background-color: brown;
+  border-radius: var(--radius-1);
+}
+
+.card__bookmark:active {
+  background-color: brown;
 }
 
 .card__tags {
