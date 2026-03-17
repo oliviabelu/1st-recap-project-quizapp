@@ -3,11 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>My Quiz</title>
   </head>
   <body>
-    <header>
-      <h1>Mein Quiz</h1>
+    <header class="my-header">
+      <h1 class="my-header__title">Harry Potter Quiz</h1>
     </header>
+    <main class="my-main">
+      <section class="card">
+        <!--Button: Bookmark-->
+        <button class="card__bookmark">
+          <img
+            src="./pics/bookmark.png"
+            alt="Bookmark"
+            aria-describedby="Bookmark Symbol: unchecked"
+            height="40vh"
+            width="40vh"
+          />
+        </button>
+
+        <!--Question-->
+        <p class="card__question">
+          What is the name of the school that Harry Potter attends?
+        </p>
+
+        <!--Answer (hidden option)-->
+        <p class="card__answer" aria-describedby="Answer">
+          Hogwarts School of Witchcraft and Wizardry
+        </p>
+
+        <!--Button: Show Answer / Hide Answer-->
+        <button class="card__show-answer" type="button">Show Answer</button>
+        <!--categories as tags-->
+
+        <div class="card__tags" aria-describedby="Tags regarding the question">
+          <p class="card__tag tag--1">Harry Potter</p>
+          <p class="card__tag tag--2">Hogwarts</p>
+          <p class="card__tag tag--3">Fiction</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <!--Button: Bookmark-->
+        <button class="card__bookmark">
+          <img
+            src="./pics/bookmark-checked.png"
+            alt="Bookmark"
+            aria-describedby="Bookmark Symbol: unchecked"
+            height="40vh"
+            width="40vh"
+          />
+        </button>
+
+        <!--Question-->
+        <p class="card__question">
+          Who is Harry Potter's best friend throughout the series?
+        </p>
+
+        <!--Answer (hidden option)-->
+        <p class="card__answer">Ron Weasley</p>
+
+        <!--Button: Show Answer / Hide Answer-->
+        <button class="card__show-answer" type="button">Show Answer</button>
+
+        <!--categories as tags-->
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Characters</p>
+          <p class="card__tag tag-3">Friends</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <!--Button: Bookmark-->
+        <button class="card__bookmark">
+          <img
+            src="./pics/bookmark-checked.png"
+            alt="Bookmark"
+            aria-describedby="Bookmark Symbol: unchecked"
+            height="40vh"
+            width="40vh"
+          />
+        </button>
+
+        <!--Question-->
+        <p class="card__question">
+          What is the name of the lightning bolt-shaped scar on Harry Potter's
+          forehead?
+        </p>
+
+        <!--Answer (hidden option)-->
+        <p class="card__answer">The Dark Mark</p>
+
+        <!--Button: Show Answer / Hide Answer-->
+        <button class="card__show-answer" type="button">Show Answer</button>
+
+        <!--categories as tags-->
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Symbolism</p>
+          <p class="card__tag tag-3">Scar</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <!--Button: Bookmark-->
+        <button class="card__bookmark">
+          <img
+            src="./pics/bookmark.png"
+            alt="Bookmark"
+            aria-describedby="Bookmark Symbol: unchecked"
+            height="40vh"
+            width="40vh"
+          />
+        </button>
+
+        <!--Question-->
+        <p class="card__question">
+          Which magical creature guards the entrance to the Gryffindor common
+          room?
+        </p>
+
+        <!--Answer (hidden option)-->
+        <p class="card__answer">The Fat Lady (portrait)</p>
+
+        <!--Button: Show Answer / Hide Answer-->
+        <button class="card__show-answer" type="button">Show Answer</button>
+
+        <!--categories as tags-->
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Creatures</p>
+          <p class="card__tag tag-3">Gryffindor</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <!--Button: Bookmark-->
+        <button class="card__bookmark">
+          <img
+            src="./pics/bookmark-checked.png"
+            alt="Bookmark"
+            aria-describedby="Bookmark Symbol: unchecked"
+            height="40vh"
+            width="40vh"
+          />
+        </button>
+
+        <!--Question-->
+        <p class="card__question">
+          What is the name of the game played on flying broomsticks in the
+          wizarding world?
+        </p>
+
+        <!--Answer (hidden option)-->
+        <p class="card__answer">Quidditch</p>
+
+        <!--Button: Show Answer / Hide Answer-->
+        <button class="card__show-answer" type="button">Show Answer</button>
+
+        <!--categories as tags-->
+        <div class="card__tags">
+          <p class="card__tag tag-1">Harry Potter</p>
+          <p class="card__tag tag-2">Sports</p>
+          <p class="card__tag tag-3">Magic</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <!-- <a class="navbar__icon" href="#home"><img src="./pics/home.png" /></a>
+        <a class="navbar__icon" href="#bookmark">bookmark</a>
+        <a class="navbar__icon" href="#profile">profile</a> -->
+        <ul class="navbar__list">
+          <li class="navbar__item navbar__item--active">
+            <a href="index.html" class="navbar__icon">
+              <img
+                src="./pics/home.png"
+                alt="Home Icon"
+                width="40vd"
+                aria-describedby="Navigation to Homepage"
+              />
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="bookmark.html" class="navbar__icon">
+              <img
+                src="./pics/bookmark.png"
+                alt="Home Icon"
+                width="40vd"
+                aria-describedby="Navigation to Bookmark page"
+              />
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="#profile" class="navbar__icon">
+              <img
+                src="./pics/witch.png"
+                alt="Home Icon"
+                width="40vd"
+                aria-describedby="Navigation to Profile page"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,28 @@
+.navbar__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background: var(--golden);
+  padding: var(--padding-nav);
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  bottom: 0;
+}
+
+/*.navbar__item {
+  position: relative;
+}
+
+.navbar__icon {
+  position: absolute;
+  top: 50;
+  left: 50;
+}*/
+
+.navbar__item--active {
+  background: var(--card);
+  border-radius: var(--radius-1);
+  box-shadow: 0px 0px 10px 0px var(--shaddow);
+  border: var(--border) solid var(--golden);
+}
