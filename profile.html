@@ -10,6 +10,60 @@
     <header class="my-header">
       <h1 class="my-header__title">Harry Potter Quiz</h1>
     </header>
+    <main class="my-main">
+      <section class="about-me">
+        <div class="about-me__top" aria-describedby="profile picture and name">
+          <img
+            src="./pics/profile-witch.png"
+            alt="my profile pic"
+            width="100vw"
+            class="about-me__profile-pic"
+            aria-describedby="Profilepicture of a witch"
+          />
+          <p class="about-me__name" aria-describedby="profile name">
+            Little Witch
+          </p>
+        </div>
+        <p class="about-me__text">
+          Hi there, <br />
+          I'm new here and very interested in this cool quiz. <br />
+          I already tried some questions! Check out my scores.
+          <br />Let's be friends.
+        </p>
+        <div class="about-me__buttons">
+          <button
+            type="button"
+            class="about-me__quest-but"
+            aria-describedby="button that shows how many questions
+          you already answered"
+          >
+            <img
+              src="./pics/question.png"
+              alt="questionsmark symbol"
+              width="30vw"
+            />
+            13
+          </button>
+          <button
+            type="button"
+            class="about-me__bookmrk-but"
+            aria-describedby="button that shows how many bookmarks
+          you have"
+          >
+            <img
+              src="./pics/bookmark-checked.png"
+              alt="bookmark symbol"
+              width="30vw"
+            />
+            3
+          </button>
+        </div>
+        <h2>Settings</h2>
+        <p>darkmode</p>
+        <input type="checkbox" id="darkmode-toggle" />
+        <label for="darkmode-toggle"></label>
+      </section>
+    </main>
   </body>
   <footer>
     <nav class="navbar">

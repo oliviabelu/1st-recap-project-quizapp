@@ -1,0 +1,84 @@
+.about-me {
+  color: var(--card);
+}
+
+.about-me__profile-pic {
+  background: var(--card);
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 0px var(--golden);
+  border: var(--border) solid var(--background);
+}
+
+.about-me__name {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.about-me__top {
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+}
+
+.about-me__text {
+  color: var(--golden);
+}
+
+.about-me__buttons {
+  margin: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--gap);
+}
+
+.about-me__buttons > button {
+  background-color: var(--golden);
+  font-size: large;
+  padding: var(--padding-tag);
+  border-radius: var(--radius-1);
+  box-shadow: 0px 0px 20px 0px var(--golden);
+  border: var(--border) solid var(--background);
+}
+
+/*-------------quatsch test toggle------------*/
+label {
+  width: 50px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow:
+    inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background: #242424;
+}
+
+input:checked + label::after {
+  left: 45px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
