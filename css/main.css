@@ -9,6 +9,9 @@
   margin-top: calc((2 * var(--padding-head)) + 2.5rem);
   bottom: calc((2 * var(--padding-nav)) + 2.5em);
 }
+.my-main-profile {
+  height: 100vh;
+}
 
 .card {
   position: relative;
@@ -43,7 +46,8 @@
 } */
 
 .card__answer {
-  content-visibility: hidden;
+  display: none;
+  /* content-visibility: hidden; */
   text-align: center;
 }
 
