@@ -2,6 +2,7 @@
   background: var(--background);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--gap);
   padding: var(--padding-main);
   position: relative;
@@ -11,18 +12,23 @@
 
 .card {
   position: relative;
+  width: 85vw;
+  height: fit-content;
   background: var(--card);
-  padding: var(--padding-card);
+  padding: 1.5em var(--padding-card);
   border-radius: var(--radius-1);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1em;
   border: var(--border) solid var(--golden);
 }
 
 .card__question {
   margin: 0;
   text-align: center;
+  font-size: large;
   background: var(--golden);
   padding: var(--padding-card);
   border-radius: var(--radius-in-card);
@@ -38,14 +44,15 @@
 
 .card__answer {
   content-visibility: hidden;
-  background: var(--golden);
+  text-align: center;
 }
 
 .card__show-answer {
-  width: 40%;
-  position: absolute;
+  font-size: large;
+  width: 50%;
+  /* position: absolute;
   top: 50%;
-  left: 25vw;
+  left: 25vw; */
   background: var(--background);
   color: var(--golden);
   border-radius: var(--radius-1);
@@ -86,8 +93,10 @@
 }
 
 .card__tags {
+  font-size: smaller;
   display: flex;
   gap: var(--gap-tag);
+  align-self: flex-start;
 }
 
 .card__tag {
@@ -97,4 +106,16 @@
   border: var(--border) solid var(--background);
   border-radius: var(--radius-in-card);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
+}
+
+@media (min-width: 900px) {
+  .my-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 40vw;
+  }
 }
