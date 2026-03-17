@@ -40,6 +40,17 @@
   border: var(--border) solid var(--background);
 }
 
+.set-darkmode {
+  display: flex;
+  gap: var(--gap);
+  padding: var(--padding-tag);
+}
+
+.set-darkmode__text {
+  margin: 0;
+  color: var(--golden);
+}
+
 /*-------------quatsch test toggle------------*/
 label {
   width: 50px;
