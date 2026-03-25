@@ -6,11 +6,10 @@
   gap: var(--gap);
   padding: var(--padding-main);
   position: relative;
-  margin-top: calc((2 * var(--padding-head)) + 2.5rem);
-  bottom: calc((2 * var(--padding-nav)) + 2.5em);
-}
-.my-main-profile {
-  height: 100vh;
+  top: calc((2 * var(--padding-head)) + 2em);
+  margin-bottom: calc((2 * var(--padding-nav)) + 6em);
+
+  min-height: 100vh;
 }
 
 .card {
@@ -57,7 +56,7 @@
   /* position: absolute;
   top: 50%;
   left: 25vw; */
-  background: var(--background);
+  background: var(--button);
   color: var(--golden);
   border-radius: var(--radius-1);
   padding: var(--padding-tag);

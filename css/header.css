@@ -1,5 +1,8 @@
 .my-header {
-  /* box-shadow: 0px 0px 20px 0px var(--shaddow); */
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .my-header__title {
@@ -11,4 +14,10 @@
   text-decoration: dotted;
   text-shadow: var(--shaddow) 1px 0 10px;
   /* text-shadow: 4px 4px var(--shaddow); */
+
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  box-shadow: 0px 0px 20px 0px var(--golden);
+  /*border: var(--border) solid var(--button);*/
 }
