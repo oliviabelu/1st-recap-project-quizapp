@@ -8,6 +8,7 @@
   /*---colors---*/
   --golden: #f8da55 /*#f8da55*/;
   --card: radial-gradient(#fcedc3, #ffe7a3, #f5bc22);
+  --tag: #fcedc3;
   --black: #000000;
   --background: radial-gradient(
     hsl(12, 100%, 72%),
@@ -23,6 +24,7 @@
   --padding-main: 5%;
   --padding-card: 1em;
   --padding-tag: 0.5em;
+  --padding-answer: 2em;
 
   --border: 0.05em;
 
