@@ -42,7 +42,6 @@
   /* display: none; */
   /* content-visibility: hidden; */
   text-align: center;
-  transition: 2s ease;
 }
 
 .card__answer--hide {
