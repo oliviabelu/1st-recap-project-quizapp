@@ -7,15 +7,17 @@
 :root {
   /*---colors---*/
   --golden: #f8da55 /*#f8da55*/;
-  --card: radial-gradient(#fcedc3, #ffe7a3, #f5bc22);
-  --tag: #fcedc3;
+  --cardgolden: #f5c74a;
+  --card: #fcedc3;
+  --radial: radial-gradient(#fcedc3, #ffe7a3, #f5bc22);
+  --tag: #faf1d8;
   --black: #000000;
   --background: radial-gradient(
     hsl(12, 100%, 72%),
     hsl(12, 91%, 65%),
     #801616
   ); /*hsl(12, 100%, 72%); #801616*/
-  --button: hsl(12, 66%, 47%);
+  --button: hsla(4, 74%, 41%, 0.882);
   --shaddow: #0000007a;
 
   /*---sizes---*/

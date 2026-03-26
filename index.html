@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./pics/witch.png" type="image/jpg" />
+    <script src="js/index.js" defer></script>
     <title>My Harry Potter Quiz</title>
   </head>
   <body>
@@ -14,13 +15,14 @@
     <main class="my-main">
       <section class="card">
         <!--Button: Bookmark-->
-        <button class="card__bookmark">
+        <button class="card__bookmark" data-js="bookmark">
           <img
-            src="./pics/bookmark.png"
+            src="./pics/bookmark-fav.png"
             alt="Bookmark"
             aria-describedby="Bookmark Symbol: unchecked"
             height="40vh"
             width="40vh"
+            data-js="bookmarkIcon"
           />
         </button>
 
@@ -30,12 +32,18 @@
         </p>
 
         <!--Answer (hidden option)-->
-        <p class="card__answer" aria-describedby="Answer">
+        <p
+          class="card__answer card__answer--hide"
+          aria-describedby="Answer"
+          data-js="answer"
+        >
           Hogwarts School of Witchcraft and Wizardry
         </p>
 
         <!--Button: Show Answer / Hide Answer-->
-        <button class="card__show-answer" type="button">Show Answer</button>
+        <button class="card__show-answer" type="button" data-js="answerbutton">
+          Show Answer
+        </button>
         <!--categories as tags-->
 
         <div class="card__tags" aria-describedby="Tags regarding the question">
@@ -112,7 +120,7 @@
         <!--Button: Bookmark-->
         <button class="card__bookmark">
           <img
-            src="./pics/bookmark.png"
+            src="./pics/bookmark-fav.png"
             alt="Bookmark"
             aria-describedby="Bookmark Symbol: unchecked"
             height="40vh"
@@ -383,10 +391,20 @@
           <li class="navbar__item">
             <a href="bookmark.html" class="navbar__icon">
               <img
-                src="./pics/bookmark.png"
-                alt="Home Icon"
+                src="./pics/bookmark-fav.png"
+                alt="Bookmark Icon"
                 width="40vd"
                 aria-describedby="Navigation to Bookmark page"
+              />
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="form.html" class="navbar__icon">
+              <img
+                src="./pics/add-question.png"
+                alt="Create new card Icon"
+                width="40vd"
+                aria-describedby="Navigation to page for Creating new cards"
               />
             </a>
           </li>
@@ -394,7 +412,7 @@
             <a href="profile.html" class="navbar__icon">
               <img
                 src="./pics/witch.png"
-                alt="Home Icon"
+                alt="Profile Icon"
                 width="40vd"
                 aria-describedby="Navigation to Profile page"
               />
