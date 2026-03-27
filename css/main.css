@@ -97,14 +97,29 @@
   box-shadow: 0px 0px 10px 0px var(--shaddow);
 }
 
+@media (min-width: 600px) {
+  .my-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 40vw;
+  }
+}
 @media (min-width: 900px) {
   .my-main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    align-items: flex-start;
   }
 
   .card {
-    width: 40vw;
+    width: 25vw;
   }
 }

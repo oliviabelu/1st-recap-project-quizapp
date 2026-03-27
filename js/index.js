@@ -13,8 +13,6 @@ let isBookmarked = true;
 showAnswerButton.addEventListener("click", () => {
   isHidden = !isHidden;
   answer.classList.toggle("card__answer--hide");
-  //answer.classList.toggle("card__hide-answer");
-  console.log(answer.classList);
 
   showAnswerButton.textContent = isHidden ? "Hide Answer" : "Show Answer";
 });
