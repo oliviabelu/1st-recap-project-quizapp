@@ -8,8 +8,8 @@
 .new-card-header {
   font-weight: bold;
   font-size: larger;
-  color: var(--golden);
-  text-shadow: 1px 1px var(--shaddow);
+  color: var(--shaddow);
+  text-shadow: 1px 1px var(--golden);
 }
 
 @keyframes slideIn {

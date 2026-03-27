@@ -14,15 +14,22 @@ if (questionInput.value != "") {
 if (answerInput.value != "") {
   answerInput.value = "";
 }
+//---remaining characters count---
+console.log(questionInput);
+function getRemainingChars(charMax, event) {
+  return charMax - event.target.value.length;
+}
 
 questionInput.addEventListener("input", (event) => {
-  remCharQuest.textContent = 150 - event.target.value.length;
+  console.log(questionInput.maxLength);
+  remCharQuest.textContent = getRemainingChars(questionInput.maxLength, event);
 });
 
 answerInput.addEventListener("input", (event) => {
-  remCharAns.textContent = 150 - event.target.value.length;
+  remCharAns.textContent = getRemainingChars(answerInput.maxLength, event);
 });
 
+//---fill in new form---
 let newQuestion = "";
 let newAnswer = "";
 let newTag = "";
