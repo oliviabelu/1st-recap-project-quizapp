@@ -68,7 +68,7 @@ form.addEventListener("submit", (event) => {
   newCard.innerHTML = `<!--Button: Bookmark-->
         <button class="card__bookmark" data-js="bookmark">
           <img
-            src="./pics/bookmark.png"
+            src="./pics/bookmark-fav.png"
             alt="Bookmark"
             aria-describedby="Bookmark Symbol: unchecked"
             height="40vh"
@@ -84,7 +84,7 @@ form.addEventListener("submit", (event) => {
 
         <!--Answer (hidden option)-->
         <p
-          class="card__answer "
+          class="card__answer card__answer--hide"
           aria-describedby="Answer"
           data-js="answer"
         >
@@ -93,7 +93,7 @@ form.addEventListener("submit", (event) => {
 
         <!--Button: Show Answer / Hide Answer-->
         <button class="card__show-answer" type="button" data-js="answerbutton">
-          Hide Answer
+          Show Answer
         </button>
         <!--categories as tags-->
 
@@ -105,4 +105,32 @@ form.addEventListener("submit", (event) => {
 
   event.target.reset();
   event.target.elements.question.focus();
+
+  //---add event listeners to button and bookmark
+  const answer = newCard.querySelector('[data-js="answer"]');
+  const showAnswerButton = document.querySelector('[data-js="answerbutton"]');
+
+  const bookmark = document.querySelector('[data-js="bookmark"]');
+  const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]');
+
+  let isHidden = false;
+  let isBookmarked = true;
+
+  //---Button Show Answer / Hide Answer ---
+  showAnswerButton.addEventListener("click", () => {
+    isHidden = !isHidden;
+    answer.classList.toggle("card__answer--hide");
+    //answer.classList.toggle("card__hide-answer");
+    console.log(answer.classList);
+
+    showAnswerButton.textContent = isHidden ? "Hide Answer" : "Show Answer";
+  });
+
+  //---Bookmark toggle---
+  bookmark.addEventListener("click", () => {
+    isBookmarked = !isBookmarked;
+    bookmarkIcon.src = isBookmarked
+      ? "./pics/bookmark-fav.png"
+      : "./pics/bookmark-checked.png";
+  });
 });
