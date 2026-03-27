@@ -19,6 +19,7 @@
   ); /*hsl(12, 100%, 72%); #801616*/
   --button: hsla(4, 74%, 41%, 0.882);
   --shaddow: #0000007a;
+  --golden-dark: #8b740d;
 
   /*---sizes---*/
   --padding-head: 1rem;

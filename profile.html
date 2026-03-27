@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./pics/witch.png" type="image/jpg" />
-    <script src="js/form.js" defer></script>
+    <script src="js/profile.js" defer></script>
     <title>Profile</title>
   </head>
   <body>
     <header class="my-header">
       <h1 class="my-header__title">Harry Potter Quiz</h1>
     </header>
-    <main class="my-main">
+    <main class="my-main" data-js="main">
       <section class="about-me">
         <div class="about-me__top" aria-describedby="profile picture and name">
           <img
@@ -67,6 +67,15 @@
           <input type="checkbox" id="darkmode-toggle" class="darkmode-toggle__input" />
           <label for="darkmode-toggle" class="darkmode-toggle__label"></label>
         </div> -->
+        <div class="set-darkmode">
+          <p class="set-darkmode__text">darkmode</p>
+          <label for="darkmode-toggle" class="darkmode-toggle__label"></label>
+          <input
+            type="checkbox"
+            id="darkmode-toggle"
+            data-js="darkmode-toggle"
+          />
+        </div>
       </section>
     </main>
   </body>

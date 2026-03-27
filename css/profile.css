@@ -51,7 +51,13 @@
   color: var(--shaddow);
 }
 
+.darkmode {
+  background: var(--black);
+  color: var(--golden);
+}
+
 /*-------------quatsch test toggle------------*/
+
 /* .darkmode-toggle__label {
   width: 50px;
   height: 20px;
