@@ -1,12 +1,12 @@
 .about-me {
-  color: var(--card);
+  color: var(--shaddow);
 }
 
 .about-me__profile-pic {
   background: var(--card);
   border-radius: 50%;
   box-shadow: 0px 0px 20px 0px var(--golden);
-  border: var(--border) solid var(--background);
+  border: var(--border) solid var(--shaddow);
 }
 
 .about-me__name {
@@ -21,7 +21,7 @@
 }
 
 .about-me__text {
-  color: var(--golden);
+  color: var(--shaddow);
 }
 
 .about-me__buttons {
@@ -48,11 +48,11 @@
 
 .set-darkmode__text {
   margin: 0;
-  color: var(--golden);
+  color: var(--shaddow);
 }
 
 /*-------------quatsch test toggle------------*/
-label {
+/* .darkmode-toggle__label {
   width: 50px;
   height: 20px;
   position: relative;
@@ -66,7 +66,7 @@ label {
   transition: 0.3s;
 }
 
-label::after {
+.darkmode-toggle__label::after {
   content: "";
   width: 18px;
   height: 18px;
@@ -78,18 +78,18 @@ label::after {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-input {
+.darkmode-toggle__input {
   width: 0;
   height: 0;
   visibility: hidden;
 }
 
-input:checked + label {
+.darkmode-toggle__input:checked + .darkmode-toggle__label {
   background: #242424;
 }
 
-input:checked + label::after {
+.darkmode-toggle__input:checked + .darkmode-toggle__label::after {
   left: 45px;
   transform: translateX(-100%);
   background: linear-gradient(180deg, #777, #3a3a3a);
-}
+} */

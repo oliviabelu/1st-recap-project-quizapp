@@ -6,68 +6,46 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./pics/witch.png" type="image/jpg" />
     <script src="js/form.js" defer></script>
-    <title>Profile</title>
+    <title>Add new Question</title>
   </head>
   <body>
     <header class="my-header">
       <h1 class="my-header__title">Harry Potter Quiz</h1>
     </header>
-    <main class="my-main">
-      <section class="about-me">
-        <div class="about-me__top" aria-describedby="profile picture and name">
-          <img
-            src="./pics/profile-witch.png"
-            alt="my profile pic"
-            width="100vw"
-            class="about-me__profile-pic"
-            aria-describedby="Profilepicture of a witch"
-          />
-          <p class="about-me__name" aria-describedby="profile name">
-            Little Witch
-          </p>
-        </div>
-        <p class="about-me__text">
-          Hi there, <br />
-          I'm new here and very interested in this cool quiz. <br />
-          I already tried some questions! Check out my scores.
-          <br />Let's be friends.
+    <main class="my-main" data-js="main">
+      <form class="card new-card" data-js="form">
+        <label for="question" class="new-card-header">Your Question</label>
+        <textarea
+          data-js="question"
+          id="question"
+          name="question"
+          class="form-text card__question"
+          maxlength="150"
+          rows="5"
+          cols="15"
+        ></textarea>
+        <p class="remaining-character-question">
+          <span data-js="rem-char-quest">150</span> characters left
         </p>
-        <div class="about-me__buttons">
-          <button
-            type="button"
-            class="about-me__quest-but"
-            aria-describedby="button that shows how many questions
-          you already answered"
-          >
-            <img
-              src="./pics/question.png"
-              alt="questionsmark symbol"
-              width="30vw"
-            />
-            13
-          </button>
-          <button
-            type="button"
-            class="about-me__bookmrk-but"
-            aria-describedby="button that shows how many bookmarks
-          you have"
-          >
-            <img
-              src="./pics/bookmark-checked.png"
-              alt="bookmark symbol"
-              width="30vw"
-            />
-            3
-          </button>
-        </div>
 
-        <h2>Settings</h2>
-        <!-- <div class="set-darkmode">
-          <p class="set-darkmode__text">darkmode</p>
-          <input type="checkbox" id="darkmode-toggle" class="darkmode-toggle__input" />
-          <label for="darkmode-toggle" class="darkmode-toggle__label"></label>
-        </div> -->
-      </section>
+        <label for="answer" class="new-card-header">Your Answer</label>
+        <textarea
+          data-js="answer"
+          id="answer"
+          name="answer"
+          class="form-text card__answer"
+          maxlength="150"
+          cols="30"
+        ></textarea>
+        <p class="remaining-characters-answer">
+          <span data-js="rem-char-ans">150</span> characters left
+        </p>
+
+        <label for="tag" class="new-card-header">Tag</label>
+        <input type="text" name="tag" id="tag" class="card__tag" />
+
+        <button type="submit" class="card__show-answer">Submit</button>
+      </form>
     </main>
   </body>
   <footer>
@@ -96,7 +74,7 @@
             />
           </a>
         </li>
-        <li class="navbar__item">
+        <li class="navbar__item navbar__item--active">
           <a href="form.html" class="navbar__icon">
             <img
               src="./pics/add-question.png"
@@ -106,7 +84,7 @@
             />
           </a>
         </li>
-        <li class="navbar__item navbar__item--active">
+        <li class="navbar__item">
           <a href="profile.html" class="navbar__icon">
             <img
               src="./pics/witch.png"

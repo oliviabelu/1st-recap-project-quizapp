@@ -1,5 +1,5 @@
 .my-main {
-  background: white /*var(--background)*/;
+  background: var(--tag); /* white var(--background)*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@
   position: relative;
   width: 85vw;
   height: fit-content;
-  background: white /*var(--card)*/;
+  background: var(--card);
   padding: 1.5em var(--padding-card);
   border-radius: var(--radius-1);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
@@ -31,37 +31,35 @@
   margin: 0;
   text-align: center;
   font-size: 25px;
-  background: var(--card); /*(--golden)*/
+  background: var(--radial); /*(--golden)*/
   padding: var(--padding-card);
   border-radius: var(--radius-in-card);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
-  border: var(--border) solid var(--background);
+  border: var(--border) solid var(--golden);
+  width: 80vd;
 }
 
-/* .card__answer-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .card__answer {
-  display: none;
+  /* display: none; */
   /* content-visibility: hidden; */
   text-align: center;
+  background: none;
+}
+
+.card__answer--hide {
+  display: none;
 }
 
 .card__show-answer {
   font-size: larger;
   width: 50%;
-  /* position: absolute;
-  top: 50%;
-  left: 25vw; */
   background: var(--button);
   color: var(--golden);
   border-radius: var(--radius-1);
   padding: var(--padding-tag);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
   border: var(--border) solid var(--golden);
+  transition: 0.5s ease;
 }
 
 .card__show-answer:hover {
@@ -69,16 +67,9 @@
   color: var(--background);
 }
 
-.card__show-answer:focus {
-  /* .card__answer {
-    content-visibility: visible;
-  } */
-}
 .card__bookmark {
-  /* background-image: url("../pics/bookmark.png");*/
   width: 50px;
   height: 50px;
-  /*background-size: cover;*/
   position: absolute;
   top: -10px;
   right: 10px;
@@ -87,13 +78,7 @@
 }
 
 .card__bookmark:hover {
-  background-color: #a62929;
-  border-radius: var(--radius-1);
-  box-shadow: 0px 0px 20px 0px var(--golden);
-}
-
-.card__bookmark:active {
-  background-color: brown;
+  transform: rotate(-5deg);
 }
 
 .card__tags {
@@ -107,7 +92,7 @@
   margin: 0;
   background: var(--tag);
   padding: var(--padding-tag);
-  border: var(--border) solid var(--background);
+  border: var(--border) solid var(--golden);
   border-radius: var(--radius-in-card);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
 }

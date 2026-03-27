@@ -7,13 +7,13 @@
 
 .my-header__title {
   margin: 0;
-  background: var(--golden);
+  background: var(--cardgolden);
   padding: var(--padding-head);
   color: var(--background);
   text-align: center;
-  text-decoration: dotted;
-  text-shadow: var(--shaddow) 1px 0 10px;
-  /* text-shadow: 4px 4px var(--shaddow); */
+  /* text-decoration: dotted; */
+  /* text-shadow: var(--shaddow) 1px 0 10px; */
+  text-shadow: 2px 2px var(--shaddow);
 
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
