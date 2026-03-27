@@ -5,6 +5,13 @@
   animation: slideIn 500ms forwards;
 }
 
+.new-card-header {
+  font-weight: bold;
+  font-size: larger;
+  color: var(--golden);
+  text-shadow: 1px 1px var(--shaddow);
+}
+
 @keyframes slideIn {
   0% {
     transform: translateX(200%);
@@ -27,4 +34,14 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  box-shadow: 0px 0px 10px 0px var(--shaddow);
+  border: var(--border) solid var(--golden);
+}
+
+.remaining-characters {
+  font-size: x-small;
+  margin: 0;
+  align-self: self-end;
+  /* align-self: self-end;
+  padding-right: 20px; */
 }

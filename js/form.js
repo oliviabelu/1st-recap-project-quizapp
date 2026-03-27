@@ -1,6 +1,28 @@
 const form = document.querySelector('[data-js="form"]');
 const main = document.querySelector('[data-js="main"]');
 
+const questionInput = document.querySelector('[data-js="question"]');
+const answerInput = document.querySelector('[data-js="answer"]');
+//const newInput = document.querySelector('[data-js="new-input"]');
+const remCharQuest = document.querySelector('[data-js="rem-char-quest"]');
+const remCharAns = document.querySelector('[data-js="rem-char-ans"]');
+
+//---clear input fields, when charging the page---
+if (questionInput.value != "") {
+  questionInput.value = "";
+}
+if (answerInput.value != "") {
+  answerInput.value = "";
+}
+
+questionInput.addEventListener("input", (event) => {
+  remCharQuest.textContent = 150 - event.target.value.length;
+});
+
+answerInput.addEventListener("input", (event) => {
+  remCharAns.textContent = 150 - event.target.value.length;
+});
+
 let newQuestion = "";
 let newAnswer = "";
 let newTag = "";
@@ -77,5 +99,3 @@ form.addEventListener("submit", (event) => {
   event.target.reset();
   event.target.elements.question.focus();
 });
-
-console.log(document.body);

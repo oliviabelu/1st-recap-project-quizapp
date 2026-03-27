@@ -35,13 +35,15 @@
   padding: var(--padding-card);
   border-radius: var(--radius-in-card);
   box-shadow: 0px 0px 10px 0px var(--shaddow);
-  border: var(--border) solid var(--background);
+  border: var(--border) solid var(--golden);
+  width: 80vd;
 }
 
 .card__answer {
   /* display: none; */
   /* content-visibility: hidden; */
   text-align: center;
+  background: none;
 }
 
 .card__answer--hide {
@@ -66,10 +68,8 @@
 }
 
 .card__bookmark {
-  /* background-image: url("../pics/bookmark.png");*/
   width: 50px;
   height: 50px;
-  /*background-size: cover;*/
   position: absolute;
   top: -10px;
   right: 10px;
@@ -78,9 +78,6 @@
 }
 
 .card__bookmark:hover {
-  /*background-color: #a62929;
-  border-radius: var(--radius-1);
-  box-shadow: 0px 0px 20px 0px var(--golden);*/
   transform: rotate(-5deg);
 }
 

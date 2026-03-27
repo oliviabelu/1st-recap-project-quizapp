@@ -14,8 +14,9 @@
     </header>
     <main class="my-main" data-js="main">
       <form class="card new-card" data-js="form">
-        <label for="question">Your Question</label>
+        <label for="question" class="new-card-header">Your Question</label>
         <textarea
+          data-js="question"
           id="question"
           name="question"
           class="form-text card__question"
@@ -23,17 +24,24 @@
           rows="5"
           cols="15"
         ></textarea>
+        <p class="remaining-character-question">
+          <span data-js="rem-char-quest">150</span> characters left
+        </p>
 
-        <label for="answer">Your Answer</label>
+        <label for="answer" class="new-card-header">Your Answer</label>
         <textarea
+          data-js="answer"
           id="answer"
           name="answer"
-          class="form-text"
+          class="form-text card__answer"
           maxlength="150"
           cols="30"
         ></textarea>
+        <p class="remaining-characters-answer">
+          <span data-js="rem-char-ans">150</span> characters left
+        </p>
 
-        <label for="tag">Tag</label>
+        <label for="tag" class="new-card-header">Tag</label>
         <input type="text" name="tag" id="tag" class="card__tag" />
 
         <button type="submit" class="card__show-answer">Submit</button>
